@@ -10,7 +10,7 @@ export class Vehicle {
   // variables
   private color: string
   readonly maxSpeed: number
-  readonly speed: number
+  protected speed: number
 
   /*
   * Constructor
