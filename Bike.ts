@@ -16,6 +16,7 @@ export class Bike extends Vehicle {
   * Constructor.
   */
   constructor(cadence: number) {
+    super()
     this.cadence = cadence
   }
 
