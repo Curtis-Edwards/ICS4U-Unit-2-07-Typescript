@@ -15,9 +15,10 @@ export class Bike extends Vehicle {
   /*
   * Constructor.
   */
-  constructor(maxSpeed: number,color: String, cadence: number) {
+  constructor(color: String, maxSpeed: number, cadence: number) {
     super()
-    this.cadence = cadence
+    super.color = color
+    this.cadence = 0
   }
 
   /*
