@@ -1,5 +1,5 @@
 /*
-* This program is a vehicle class.
+* This program runs with the vehicle class.
 *
 * @author  Curtis Edwards
 * @version 1.0
