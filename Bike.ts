@@ -38,7 +38,7 @@ export class Bike extends Vehicle {
   * This method shows the status of the truck
   */
   public status() {
-    console.log(" -> Speed: " + this._speed)
+    console.log(" -> Speed: " + this.speed)
     console.log(" -> Max Speed: " + this.maxSpeed)
     console.log(" -> Color: " + this.color)
     console.log(" -> Cadence: " + this.cadence)
