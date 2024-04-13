@@ -17,6 +17,7 @@ export class Truck extends Vehicle {
   * Constructor.
   */
   constructor(LicensePlateNumber: String) {
+    super()
     this.LicensePlateNumber = LicensePlateNumber
   }
 
