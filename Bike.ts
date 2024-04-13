@@ -20,6 +20,7 @@ export class Bike extends Vehicle {
     this.maxSpeed = maxSpeed
     super.color = color
     this.cadence = 0
+    // how to get speed here???
   }
 
   /*
