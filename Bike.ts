@@ -16,9 +16,8 @@ export class Bike extends Vehicle {
   * Constructor.
   */
   constructor(color: String, maxSpeed: number) {
-    super(color, maxSpeed, speed)
+    super(color, maxSpeed)
     this.cadence = 0
-    // how to get speed here???
   }
 
   /*
