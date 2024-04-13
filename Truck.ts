@@ -14,35 +14,44 @@ export class Truck extends Vehicle {
   private LicensePlateNumber: string
 
   /*
-  * Constructor
+  * Constructor.
   */
   constructor(LicensePlateNumber: String) {
     this.LicensePlateNumber = LicensePlateNumber
   }
 
   /*
-  * This method gets the LicensePlateNumber
+  * This method gets the LicensePlateNumber.
   */
   public get LicensePlateNumber() {
     return this.LicensePlateNumber
   }
 
   /*
-  * This method sets the LicensePlateNumber
+  * This method sets the LicensePlateNumber.
   */
   public set LicensePlateNumber(value: String) {
     this.LicensePlateNumber = value
   }
 
   /*
-  * This method changes the speed via the accelerating formula
+  * This method shows the status of the truck
   */
-  public accelerate(accelerationPower: number, accelerationTime) {
-    this._speed = (accelerationPower * accelerationTime) + this._speed
-    // check if speed exceeds max speed 
-    if (this._speed > this.maxSpeed) {
-      this._speed = this.maxSpeed
-    }
+  public status() {
+    console.log(" -> Speed: " + this._speed)
+    console.log(" -> Max Speed: " + this.maxSpeed)
+    console.log(" -> Color: " + this.color)
+    console.log(" -> License Plate: " + this.LicensePlateNumber)
   }
 
+  /*
+  * The applyAir method.
+  */
+  public applyAir(airPressure: number) {
+    this.speed = this.speed - airPressure / 2
+    // Can't have negative speed
+    if (this._speed < 0) {
+      this._speed = 0
+    }
+  }
 }
