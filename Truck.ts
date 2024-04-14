@@ -61,6 +61,6 @@ export class Truck extends Vehicle {
   */
   public accelerate(accelerationPower, accelerationTime) {
     super.accelerate(accelerationPower, accelerationTime)
-    this.speed = speed()
+    this.speed = super.speed()
   }
 }
