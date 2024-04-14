@@ -55,4 +55,10 @@ export class Truck extends Vehicle {
       this._speed = 0
     }
   }
+
+  /*
+  * This method changes the speed via the accelerating formula
+  */
+  public accelerate(accelerationPower, accelerationTime) {
+    super.accelerate(accelerationPower, accelerationTime)
 }
