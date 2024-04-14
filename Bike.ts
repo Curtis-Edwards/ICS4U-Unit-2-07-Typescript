@@ -45,9 +45,9 @@ export class Bike extends Vehicle {
   }
 
   /*
-  * The Accelerate method.
+  * The accelerate method.
   */
-  public Accelerate(appliedPower: number) {
+  public accelerate(appliedPower: number) {
     this.cadence = this.cadence + appliedPower
   }
 
