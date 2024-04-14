@@ -48,13 +48,13 @@ export class Bike extends Vehicle {
   * The Acceelerate method.
   */
   public Acceelerate(appliedPower: number) {
-    this.speed = super.speed(this.cadence + appliedPower)
+    this.cadence = this.cadence + appliedPower
   }
 
   /*
   * The ringBell method.
   */
-  public ringBell(appliedPower: number) {
+  public ringBell() {
     console.log("Ding ding!\n")
   }
 }
