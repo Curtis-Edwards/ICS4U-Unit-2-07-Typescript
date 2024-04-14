@@ -23,6 +23,8 @@ bmx.accelerate(15)
 bmx.status()
 
 console.log('\nRing bell.')
+bmx.ringBell()
+
 
 const bigTruck = new Truck('Grey', 200, 'HGC-3456F')
 
