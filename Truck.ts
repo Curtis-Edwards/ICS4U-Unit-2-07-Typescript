@@ -24,7 +24,7 @@ export class Truck extends Vehicle {
   /*
   * This method gets the LicensePlateNumber.
   */
-  public get LicensePlateNumber() {
+  public get LicensePlateNumber(): string {
     return this.LicensePlateNumber
   }
 
