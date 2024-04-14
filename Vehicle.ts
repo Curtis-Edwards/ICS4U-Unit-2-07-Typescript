@@ -53,10 +53,10 @@ export class Vehicle {
   * This method changes the speed via the accelerating formula
   */
   public accelerate(accelerationPower, accelerationTime) {
-    this._speed = (accelerationPower * accelerationTime) + this._speed
+    this.speed = (accelerationPower * accelerationTime) + this.speed
     // check if speed exceeds max speed 
-    if (this._speed > this.maxSpeed) {
-      this._speed = this.maxSpeed
+    if (this.speed > this.maxSpeed) {
+      this.speed = this.maxSpeed
     }
   }
 
@@ -64,10 +64,10 @@ export class Vehicle {
   * This method changes the speed via the braking formula
   */
   public break(breakPower, breakTime) {
-    this._speed = this._speed - (breakPower * breakTime)
+    this.speed = this.speed - (breakPower * breakTime)
     // check if speed is less than 0, because speed can't be negative! 
-    if (this._speed < 0) {
-      this._speed = 0
+    if (this.speed < 0) {
+      this.speed = 0
     }
   }
 }
