@@ -24,21 +24,21 @@ export class Vehicle {
   /*
   * This method gets the color
   */
-  public get color() {
+  public get color(): string {
     return this.color
   }
 
   /*
   * This method gets the speed
   */
-  public get speed() {
+  public get speed(): number {
     return this.speed
   }
 
   /*
   * This method gets the max speed
   */
-  public get maxSpeed() {
+  public get maxSpeed(): number {
     return this.maxSpeed
   }
 
