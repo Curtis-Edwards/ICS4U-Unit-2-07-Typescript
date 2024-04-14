@@ -16,8 +16,8 @@ export class Truck extends Vehicle {
   /*
   * Constructor.
   */
-  constructor(LicensePlateNumber: String) {
-    super()
+  constructor(color: String, maxSpeed: number, LicensePlateNumber: String) {
+    super(color, maxSpeed)
     this.LicensePlateNumber = LicensePlateNumber
   }
 
