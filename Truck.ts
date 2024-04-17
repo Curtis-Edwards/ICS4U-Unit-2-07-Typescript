@@ -53,11 +53,4 @@ export class Truck extends Vehicle {
       this.speed = 0
     }
   }
-
-  /*
-  * The accelerate method.
-  */
-  public accelerate(accelerationPower: number, accelerationTime: number) {
-    super.accelerate(accelerationPower, accelerationTime)
-  }
 }
