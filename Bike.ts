@@ -21,26 +21,24 @@ export class Bike extends Vehicle {
   }
 
   /*
-  * This method gets the cadence.
+  * Gets the cadence.
   */
   public get cadence() {
     return this.cadence
   }
 
   /*
-  * This method sets the LicensePlateNumber.
+  * Sets the LicensePlateNumber.
   */
   public set cadence(cadence: number) {
     this.cadence = value
   }
 
   /*
-  * This method shows the status of the truck
+  * The method status method.
   */
   public status() {
-    console.log(" -> Speed: " + this.speed)
-    console.log(" -> Max Speed: " + this.maxSpeed)
-    console.log(" -> Color: " + this.color)
+    super.status()
     console.log(" -> Cadence: " + this.cadence)
   }
 
@@ -49,7 +47,6 @@ export class Bike extends Vehicle {
   */
   public accelerate(appliedPower: number) {
     this.cadence = this.cadence + appliedPower
-    this.speed = this.cadence * 2
   }
 
   /*

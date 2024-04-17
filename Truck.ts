@@ -22,26 +22,24 @@ export class Truck extends Vehicle {
   }
 
   /*
-  * This method gets the LicensePlateNumber.
+  * Gets the LicensePlateNumber.
   */
   public get LicensePlateNumber(): string {
     return this.LicensePlateNumber
   }
 
   /*
-  * This method sets the LicensePlateNumber.
+  * Sets the LicensePlateNumber.
   */
   public set LicensePlateNumber(value: String) {
     this.LicensePlateNumber = value
   }
 
   /*
-  * This method shows the status of the truck
+  * The status method.
   */
   public status() {
-    console.log(" -> Speed: " + this.speed)
-    console.log(" -> Max Speed: " + this.maxSpeed)
-    console.log(" -> Color: " + this.color)
+    super.status()
     console.log(" -> License Plate: " + this.LicensePlateNumber)
   }
 
@@ -51,15 +49,15 @@ export class Truck extends Vehicle {
   public applyAir(airPressure: number) {
     this.speed = this.speed - airPressure / 2
     // Can't have negative speed
-    if (this._speed < 0) {
-      this._speed = 0
+    if (this.speed < 0) {
+      this.speed = 0
     }
   }
 
   /*
-  * This method changes the speed via the accelerating formula
+  * The accelerate method.
   */
-  public accelerate(accelerationPower, accelerationTime) {
+  public accelerate(accelerationPower: number, accelerationTime: number) {
     super.accelerate(accelerationPower, accelerationTime)
   }
 }

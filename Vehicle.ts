@@ -13,46 +13,55 @@ export class Vehicle {
   readonly speed: number
 
   /*
-  * Constructor
+  * Constructor.
   */
-  constructor(color, maxSpeed) {
+  constructor(color: string, maxSpeed: number) {
     this.color = color
     this.maxSpeed = maxSpeed
     this.speed = 0
   }
 
   /*
-  * This method gets the color
+  * Gets the color.
   */
   public get color(): string {
     return this.color
   }
 
   /*
-  * This method gets the speed
+  * Gets the speed.
   */
   public get speed(): number {
     return this.speed
   }
 
   /*
-  * This method gets the max speed
+  * Gets the max speed.
   */
   public get maxSpeed(): number {
     return this.maxSpeed
   }
 
   /*
-  * This method sets the color
+  * Sets the color.
   */
-  public set color(value) {
+  public set color(value: string) {
     this.color = value
   }
 
   /*
-  * This method changes the speed via the accelerating formula
+  * The status method.
   */
-  public accelerate(accelerationPower, accelerationTime) {
+  public status() {
+    console.log(" -> Speed: " + this.speed)
+    console.log(" -> Max Speed: " + this.maxSpeed)
+    console.log(" -> Color: " + this.color)
+  }
+
+  /*
+  * The accelerate method.
+  */
+  public accelerate(accelerationPower: number, accelerationTime: number) {
     this.speed = (accelerationPower * accelerationTime) + this.speed
     // check if speed exceeds max speed 
     if (this.speed > this.maxSpeed) {
@@ -61,9 +70,9 @@ export class Vehicle {
   }
 
   /*
-  * This method changes the speed via the braking formula
+  * The break method.
   */
-  public break(breakPower, breakTime) {
+  public break(breakPower: number, breakTime: number) {
     this.speed = this.speed - (breakPower * breakTime)
     // check if speed is less than 0, because speed can't be negative! 
     if (this.speed < 0) {
