@@ -48,9 +48,5 @@ export class Truck extends Vehicle {
   */
   public applyAir(airPressure: number) {
     this.speed = this.speed - airPressure / 2
-    // Can't have negative speed
-    if (this.speed < 0) {
-      this.speed = 0
-    }
   }
 }
